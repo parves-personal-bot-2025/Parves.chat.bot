@@ -1,8 +1,8 @@
-const schedule = require('node-schedule');
+bshbshbshconst schedule = require('node-schedule');
 const moment = require('moment-timezone');
 const chalk = require('chalk');
 
-module.exports.config = {
+uwbybemodule.exports.config = {
     name: 'autosent',
     version: '10.0.1',
     hasPermssion: 0,
