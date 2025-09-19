@@ -34,7 +34,7 @@ module.exports.run = async function ({ api, event, args, Users, Threads }) {
 
  const msg = `╭⭓ ⪩ 𝐁𝐎𝐓𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 ⪨
 │
-├─ 🤖 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ─꯭─⃝‌‌𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭
+├─ 🤖 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ─꯭─⃝‌‌𝐏𝐚𝐫𝐯𝐞𝐬 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭
 ├─ ☢️ 𝗣𝗿𝗲𝗳𝗶𝘅 : ${config.PREFIX}
 ├─ ♻️ 𝗣𝗿𝗲𝗳𝗶𝘅 𝗕𝗼𝘅 : ${prefix}
 ├─ 🔶 𝗠𝗼𝗱𝘂𝗹𝗲𝘀 : ${commands.size}
@@ -44,11 +44,11 @@ module.exports.run = async function ({ api, event, args, Users, Threads }) {
 
 ╭⭓ ⪩ 𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢 ⪨
 │
-├─ 👑 𝗡𝗮𝗺𝗲 : 𝐬𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐡𝐨𝐬𝐞𝐧
+├─ 👑 𝗡𝗮𝗺𝗲 : 𝐌𝐝 𝐏𝐚𝐫𝐯𝐞𝐬
 ├─ 📲 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 :
-│ facebook.com/100001088468923
+│ facebook.com/61577453564787
 ├─ 💌 𝗠𝗲𝘀𝘀𝗲𝗻𝗴𝗲𝗿 :
-│ m.me/100001088468923
+│ m.me/61577453564787
 │
 ╰───────⭓
 
@@ -60,13 +60,13 @@ module.exports.run = async function ({ api, event, args, Users, Threads }) {
 ╰───────⭓
 
 ❤️ 𝗧𝗵𝗮𝗻𝗸𝘀 𝗳𝗼𝗿 𝘂𝘀𝗶𝗻𝗴 🌺
- 😍─꯭─⃝‌‌𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭😘`;
+ 😍─꯭─⃝‌‌𝐏𝐀𝐑𝐕𝐄𝐒 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭😘`;
 
  const imgLinks = [
- "https://i.imgur.com/5zfZYf5.jpeg",
- "https://i.imgur.com/5zfZYf5.jpeg",
- "https://i.imgur.com/03sXhbn.jpeg",
- "https://i.imgur.com/yJztUYb.jpeg"
+ "https://i.imgur.com/qTTmhRn.jpeg",
+ "https://i.imgur.com/qTTmhRn.jpeg",
+ "https://i.imgur.com/qTTmhRn.jpeg",
+ "https://i.imgur.com/qTTmhRn.jpeg"
  ];
 
  const imgLink = imgLinks[Math.floor(Math.random() * imgLinks.length)];
