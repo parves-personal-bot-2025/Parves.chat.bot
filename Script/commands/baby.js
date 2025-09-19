@@ -8,7 +8,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐇𝐨𝐬𝐞𝐧",
   description: "Cute AI Baby Chatbot | Talk, Teach & Chat with Emotion ☢️",
-  commandCategory: "simsim",
+  commandCategory: "simsim"
   usages: "[message/query]",
   cooldowns: 0,
   prefix: false
