@@ -2,7 +2,7 @@ module.exports.config = {
   name: "joinnoti",
   eventType: ["log:subscribe"],
   version: "1.0.2",
-  credits: "𝐏𝐚𝐫𝐯𝐞𝐬 𝐈𝐬𝐥𝐚𝐦",
+  credits: "𝐏𝐚𝐫𝐯𝐞𝐬",
   description: "Welcome message with optional image/video",
   dependencies: {
     "fs-extra": "",
@@ -28,9 +28,8 @@ module.exports.run = async function({ api, event }) {
   const { threadID } = event;
   
   const botPrefix = global.config.PREFIX || "/";
-  const botName = global.config.BOTNAME || "𝗦𝗵𝗮𝗵𝗮𝗱𝗮𝘁 𝗖𝗵𝗮𝘁 𝗕𝗼𝘁";
+  const botName = global.config.BOTNAME || "𝗣𝗮𝗿𝘃𝗲𝘀 𝗖𝗵𝗮𝘁 𝗕𝗼𝘁";
 
- 
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     await api.changeNickname(`[ ${botPrefix} ] • ${botName}`, threadID, api.getCurrentUserID());
 
@@ -57,11 +56,11 @@ ${botPrefix}Info
 ${botPrefix}Admin
 
 ★ যেকোনো অভিযোগ অথবা হেল্প এর জন্য এডমিন 𝐏𝐚𝐫𝐯𝐞𝐬 কে নক করতে পারেন ★
-➤𝐌𝐞𝐬𝐬𝐞𝐧𝐠𝐞𝐫: https://m.me/100009380400402
-➤𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩: https://wa.me/100009380400402
+➤𝐌𝐞𝐬𝐬𝐞𝐧𝐠𝐞𝐫: https://m.me/61572299956804
+➤𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩: https://wa.me/61572299956804
 
 ❖⋆═══════════════════════⋆❖
-          𝐁𝐨𝐭 𝐎𝐰𝐧𝐞𝐫 ➢ 𝐌𝐝 𝐏𝐚𝐫𝐯𝐞𝐬
+          𝐁𝐨𝐭 𝐎𝐰𝐧𝐞𝐫 ➢ 𝐏𝐀𝐑𝐕𝐄𝐒`;
 
       if (selected) {
         api.sendMessage({ body: messageBody, attachment: selected }, threadID);
@@ -73,7 +72,6 @@ ${botPrefix}Admin
     return;
   }
 
- 
   try {
     const { createReadStream, readdirSync } = global.nodemodule["fs-extra"];
     let { threadName, participantIDs } = await api.getThreadInfo(threadID);
@@ -82,8 +80,9 @@ ${botPrefix}Admin
 
     for (let id in event.logMessageData.addedParticipants) {
       const userName = event.logMessageData.addedParticipants[id].fullName;
+      const userId = event.logMessageData.addedParticipants[id].userFbId;
       nameArray.push(userName);
-      mentions.push({ tag: userName, id });
+      mentions.push({ tag: userName, id: userId });
       memLength.push(participantIDs.length - i++);
     }
     memLength.sort((a, b) => a - b);
