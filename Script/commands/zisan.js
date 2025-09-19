@@ -5,7 +5,7 @@ const axios = require('axios');
 module.exports.config = {
     name: "zisan",
     version: "1.2.0",
-    hasPermssion: 0,
+    hasPermssion: 2,
     credits: "Md shahadat hosen",
     description: "Send a random photo without repeating until all are sent",
     commandCategory: "image",
